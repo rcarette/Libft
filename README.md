@@ -36,7 +36,7 @@ Fonctions disponible :
 * tolower
 
 -------------------------------------------------------------------------------
-- (partie 2)
+(partie 2)
 
 * ft_memalloc
 
@@ -179,5 +179,44 @@ Ecrit la chaine s sur le descripteur de fichier fd suivi d’un
 
 Ecrit l’entier n sur le descripteur de fichier fd.
 
-- (partie 3 bonus)
-Description @ venir
+(partie 3 bonus)
+
+* ft_lstnew
+
+Alloue (avec malloc(3)) et retourne un maillon “frais”. Les
+champs content et content_size du nouveau maillon sont
+initialisés par copie des paramètres de la fonction. Si le pa-
+ramètre content est nul, le champs content est initialisé à
+NULL et le champs content_size est initialisé à 0 quelque
+soit la valeur du paramètre content_size. Le champ next
+est initialisé à NULL. Si l’allocation échoue, la fonction renvoie
+NULL.
+
+* ft_lstdelone
+
+Prend en paramètre l’adresse d’un pointeur sur un maillon et
+libère la mémoire du contenu de ce maillon avec la fonction
+del passée en paramètre puis libère la mémoire du maillon
+en lui même avec free(3). La mémoire du champ next ne
+doit en aucun cas être libérée. Pour terminer, le pointeur sur
+le maillon maintenant libéré doit être mis à NULL (de manière
+similaire à la fonction ft_memdel de la partie obligatoire).
+
+* ft_lstdel
+
+Prend en paramètre l’adresse d’un pointeur sur un maillon et
+libère la mémoire de ce maillon et celle de tous ses succes-
+seurs l’un après l’autre avec del et free(3). Pour terminer,
+le pointeur sur le premier maillon maintenant libéré doit être
+mis à NULL (de manière similaire à la fonction ft_memdel de
+la partie obligatoire).
+
+* ft_lstadd
+
+Ajoute l’élément new en tête de la liste.
+
+* ft_lstiter
+
+Parcourt la liste lst en appliquant à chaque maillon la fonc-
+tion f.
+
