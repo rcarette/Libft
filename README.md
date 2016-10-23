@@ -4,7 +4,8 @@ Premier projet de 42.
 
 Fonctions disponible :
 
-- Regarde le man pour celle-ci :
+- (Partie 1) Regarde le man pour celle-ci :
+
 * memset
 * bzero
 * memcpy
@@ -35,6 +36,7 @@ Fonctions disponible :
 * tolower
 
 -------------------------------------------------------------------------------
+- (partie 2)
 
 * ft_memalloc
 
@@ -176,3 +178,6 @@ Ecrit la chaine s sur le descripteur de fichier fd suivi d’un
 * ft_putnbr_fd
 
 Ecrit l’entier n sur le descripteur de fichier fd.
+
+- (partie 3 bonus)
+Description @ venir
