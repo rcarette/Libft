@@ -6,7 +6,7 @@
 /*   By: rcarette <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/18 19:43:51 by rcarette          #+#    #+#             */
-/*   Updated: 2016/10/15 12:55:07 by rcarette         ###   ########.fr       */
+/*   Updated: 2016/10/24 21:50:49 by rcarette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memalloc(size_t size)
 
 	if (size > 0)
 	{
-		new_memory = (void *)malloc(sizeof(void) * size);
+		new_memory = (void *)malloc(size);
 		if (new_memory)
 		{
 			ft_bzero(new_memory, size);
