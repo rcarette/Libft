@@ -6,7 +6,7 @@
 /*   By: rcarette <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/24 11:52:42 by rcarette          #+#    #+#             */
-/*   Updated: 2016/10/16 17:24:53 by rcarette         ###   ########.fr       */
+/*   Updated: 2016/10/29 16:01:18 by rcarette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,27 @@
 
 char	*check_if_null(char const *s1, char const *s2)
 {
-	char	*str;
+	char	*s;
 
 	if (s1 == NULL && s2 == NULL)
-		return (0);
+		return (NULL);
 	if (s1 != NULL && s2 != NULL)
 	{
-		str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-		if (str == NULL)
+		s = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+		if (s == NULL)
 			return (NULL);
 	}
 	else if (s1 != NULL && s2 == NULL)
 	{
-		if (!(str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1))))
+		if (!(s = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1))))
 			return (NULL);
 	}
 	else if (s1 == NULL && s2 != NULL)
-		if (!(str = (char *)malloc(sizeof(char) * (ft_strlen(s2) + 1))))
+		if (!(s = (char *)malloc(sizeof(char) * (ft_strlen(s2) + 1))))
 			return (NULL);
-	return (str);
+	return (s);
 }
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char		*str;

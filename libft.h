@@ -6,7 +6,7 @@
 /*   By: rcarette <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/13 02:51:56 by rcarette          #+#    #+#             */
-/*   Updated: 2016/10/22 23:38:05 by rcarette         ###   ########.fr       */
+/*   Updated: 2016/10/29 15:21:16 by rcarette         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,4 +89,5 @@ int					lst_lenght(t_list *list);
 int					is_empty_lst(t_list *list);
 void				lst_pop_top(t_list **list);
 void				ft_print_list(t_list *s1, size_t n);
+void				*ft_realloc(void *ptr, size_t size_ptr, size_t new_size);
 #endif
