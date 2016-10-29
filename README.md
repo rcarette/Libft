@@ -220,3 +220,5 @@ Ajoute l’élément new en tête de la liste.
 Parcourt la liste lst en appliquant à chaque maillon la fonc-
 tion f.
 
+Description FONCTION Supplementaire @ venir !
+
